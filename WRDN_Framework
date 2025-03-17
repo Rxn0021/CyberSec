@@ -1,0 +1,62 @@
+Information Security Management and Compliance Architecture Strategy
+
+W.A.R.D.E.N. Defense-in-Depth CyberSecurity Framework //(authored by RN.2025.) Developed to work in tandem with ISO/IEC 19249 & NIST 800-53(FedRAMP) / NIST 800-63B 
+W: Web Security and System Integrity
+- Protecting web applications and environments against vulnerabilities(e.g. SQL Injection, XSS)
+- Implementing security best practices at the beginning of IT and development lifecycle planning phase.(ex. Centralized Parameter Validation)
+A: Advanced Authentication & Access Control Protocols
+- Implementing robust authentication methods(MFA/2FA)
+- Authorize users based on Least Privilege Access doctrine. Prevents messy permission directories and helps to mitigate risk by reducing potential vulnerability entry points.
+R: Risk Assessment, Resilience Building, and Real-Time Response
+- Conduct frequent and comprehensive evaluations to determine continued system integrity and smooth, secure functionality while proactively identifying, cataloguing, and mitigating vulnerabilities.
+- Reverse engineering the defense strategy: Red-team / penetration testing practice scenarios to sharpen Incident Response Team / SOC / Blue Team Operations.
+- Create resilient systems with redundancy methods in place pertaining to system backups both physically and in-Cloud.
+D: Defense-In-Depth: Detection, Data Protection, and Decoy Deployment Measures
+- Comprehensive firewall configuration to identify unusual system behavior to detect potential threats early.
+- Safeguard sensitive data through diligent data encryption processes and using correct networking protocols as much as possible.
+- In-System Tripwire Decoy defense measures to stall and expose any potential threats / bad actors and gather intelligence on attack methodologies.
+E: Enhanced Endpoint Security & Analysis
+- Secure endpoints with advanced threat detection and protection tools; manage device permissions to correlate with necessary least privilege access to functionality operational needs.
+- Continuously verify and monitor system security & database logs to ensure correct usage. Proactively monitor, investigate, and block suspicious IPs, Domains, Hashes, or actions.
+N: Network Segmentation & Hardening
+- Implement microsegmentation network architecture strategies utilizing compartmentalized system categories and layouts to limit lateral network movement by adversaries and easy quarantine failsafe mechanisms. 
+- Next-Gen Firewall integration to automate and backtrace suspicious activity origins for previously identified bad-actors / threat adversaries or IoC(Indicators of Compromise). Serves as another layer of security through continuous deep packet and web traffic monitoring. 
+
+// The purpose of the W.A.R.D.E.N. framework is to provide next-gen cybersecurity architecture infrastructural defense best practices against emerging threats and for a digital landscape that increasingly leverages artificial intelligence. This new model provides conventional best practices blended with modern stratagems to ensure a comprehensive, secure, reliable, and most importantly adaptable cybersecurity infrastructure foundation for any size organization without compromising service-level or work-process availability while addressing all potential security concerns pertaining to disclosure, alteration, and destruction/denial. 
+// Uniting the core cybersecurity foundational architectural tenants of confidentiality, integrity, and availability by streamlining them into a robust, adjustable governance plan that maximizes the valuable strengths of each proportionally while minimizing potential drawbacks and adhering to industry compliance best-practices and regulations.     
+
+IPDRRG Cycle
+- Identify
+- Protect
+- Detect
+- Respond
+- Recover
+- Govern
+Identify the most important data to the company and focus on securing it + detection + recovery systems -> govern/develop protocols to harden the infrastructure.
+- Intelligence agencies focus on confidentiality.
+- Financial companies/banks focus on integrity(accuracy/authenticity of the data)
+- Retailers/Marketplaces e.g. Amazon focus on availability / service uptime.
+
+Zero Trust + Robust Hardened Security + Confidential Information/Databases + Advanced Monitoring & Detection System(including protocol for rapid response to breaches/advanced firewall) paired with active Threat Hunting(check logs and backtrace for unknown IPs, Domains, and Hashes), + Detailed Event Logging + Minimal disruption to workflow / service availability + Simplified Cybersec Memos to Personnel on phishing / Infoec best practices + Compartmentalized/Need-to-Know basis for information -> users only granted the permissions they need at the level they are at -> frequently update user permissions based on any privilege changes(Level 1-3 or 1-7 security privilege hierarchy based on volume of personnel; compartmentalized no read down except administrators, no write-down, password change every 90 days).
+
+Dynamic, non-flat device network security architecture:
+- Ensure that each device is only allocated exactly the level of privilege / functionality it needs(Least privilege access).
+    - Implement MFA(multi-factor authentication), defense-in-depth strategy.
+    - Close unused ports.
+    - Secure loose-ends, zip necessary files.
+    - Regular Firewall Monitoring(minimize dwell time - search for suspicious dormant activity / under-the-radar software) 
+    - Redundancy / Regularly updated non-corrupted backups (Breach mentality - assume all live systems & backups are already unsanitized/corrupted) 
+    - Killswitch Failsafe : Near-Instantaneous Real-Time Containment with advanced killswitch mechanism to quarantine affected system(s) and prevent lateral adversary/virus movement to protect critical infrastructure before spreading. 
+    - Microsegmentation: Subnet infrastructure based on functionality / security requirements and require authentication for each segment. Defense-in-depth strategy.
+    - Hybrid environment if possible with triple redundancy.
+        - Local infrastructure secured
+        - Cloud backups with secure provider / environment that complies with data privacy protection laws / sufficient encryption standards.
+        - Hard system backups
+        - External Physical Hard system backups
+    - Tripwire Decoy: Setup a non-intensive light utility resource with pre-compromised security and purposefully faulty / unsecured honeypot environment to lure potential adversaries into making a system change or accessing a resource that will more easily alert detection systems / monitoring teams.
+        - According to the latest 2024 cybersecurity data the average bad actor or ‘sleeper’ spends 10 days undetected within a system’s environment(down from 16 days in 2023; 21 days in 2021). The purpose of a tripwire decoy is to act as a digital mousetrap to get would-be data thieves or hackers to make a mistake or blunder in their system reconnaissance phase and ’trip’ or alert an early detection system by getting them to act in a small honeypot container with several non-important artificial resources that would be enticing for the adversary to check or make a detectable action towards. 
+        - Instead of waiting for the undetected adversary to be detected through conventional detection methods - this acts as another defense measure to potentially significantly reduce the time an adversary may be present on our systems without detection + redirecting them away from the real critical infrastructure or sensitive data resources.
+    - Frequency software/hardware patch updates as soon as possible + staying up to date on any patch security release notes. 
+    - Identify Gaps + Reanalyze security infrastructure biweekly.
+        - Prepare well-practiced and swift incident response teams/personnel with quick architecture rebuilding tactics using reliable backups and procedural outlines.
+        - Robust, detailed incident documentation including vulnerability assessment + solution. 
